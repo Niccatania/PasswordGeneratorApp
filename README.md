@@ -13,6 +13,8 @@ https://niccatania.github.io/PasswordGeneratorApp/
 If you'd like to add to this code please contact me. 
 
 ## Usage
+
+![Main page with first prompt](/assets/mainImg.png)
   
 
 ## Credits
