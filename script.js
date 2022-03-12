@@ -3,11 +3,9 @@
  var passLength = 8;
  var choiceArr = [];
  
- // Array's of all lowercase, and uppercase letters.
+ // Array's of all lowercase, and uppercase letters, as wekll as numbers, and special characters.
  var lowercaseArr = ["a","b","c","d","e","f","g","h","i","j","k","l", "m","n","o","p","q","r","s","t","u","v","w","x","y","z" ]
  var UppercaseArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z" ]
- 
- // Variable of all numbers, and special characters.
  var numberArr = [1,2,3,4,5,6,7,8,9,0]
  var specCharacterArr = [' ', '!','"','#','$','%','&','(',')','*','+','-','.','/',':',';','<','=','>','?','@','[', ' \ ' ,']','^','_','`','{','|','}','~']
  
@@ -19,19 +17,23 @@
  
  // Write password to the #password input
  function writePassword() {
+   choiceArr=[]
    var correctPrompts= collectPrompts();
    if(correctPrompts) {
    var newPassword = generatePassword();
    var passwordText = document.querySelector("#password");
- 
    passwordText.value = newPassword;
-   } 
-   else{
+  
+  } 
+
+ else{
      passwordText.value="";
    }
  }
+
  // Generate password function
  function generatePassword() {
+   console.log(choiceArr);
  
    // generates according to prompts selected 
    var password= "";
